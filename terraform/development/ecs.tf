@@ -8,7 +8,7 @@ resource "aws_ecs_task_definition" "hello_world" {
   container_definitions = <<DEFINITION
 [
   {
-    "image": "registry.gitlab.com/architect-io/artifacts/nodejs-hello-world:latest",
+    "image": "nginx:latest",
     "cpu": 1024,
     "memory": 2048,
     "name": "hello-world-app",

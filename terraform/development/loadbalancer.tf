@@ -1,8 +1,3 @@
-resource "aws_lb" "development-lb" {
-  name            = "development-lb"
-  subnets         = aws_subnet.public_subnets.*.id
-  security_groups = [aws_security_group.load-balancer.id]
-}
 # Development Load Balancer
 resource "aws_lb" "development" {
   name               = "${var.ecs_cluster_name}-alb"
