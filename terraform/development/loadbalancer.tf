@@ -14,10 +14,10 @@ resource "aws_lb" "development" {
 
 # Target group
 resource "aws_alb_target_group" "default-target-group" {
-  name     = "${var.ecs_cluster_name}-tg"
-  port     = 80
-  protocol = "HTTP"
-  vpc_id   = aws_vpc.development-vpc.id
+  name        = "${var.ecs_cluster_name}-tg"
+  port        = 80
+  protocol    = "HTTP"
+  vpc_id      = aws_vpc.development-vpc.id
   target_type = "ip"
 
   health_check {
