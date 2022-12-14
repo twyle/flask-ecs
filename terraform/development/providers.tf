@@ -3,7 +3,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-        Name = "flask-ecs-deployment"
+      Name = "flask-ecs-deployment"
     }
   }
 }

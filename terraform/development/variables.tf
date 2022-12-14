@@ -1,7 +1,7 @@
 # core
 variable "region" {
   description = "The AWS region to create resources in."
-  default     = "us-east-1" 
+  default     = "us-east-1"
 }
 
 # networking
@@ -31,6 +31,6 @@ variable "ecs_cluster_name" {
 
 variable "app_count" {
   description = "Number of apps to spin up."
-  type = number
-  default = 1
+  type        = number
+  default     = 1
 }
